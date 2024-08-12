@@ -218,8 +218,7 @@
 
     <div class="container">
         <div class="language-toggle">
-            <button onclick="toggleLanguage('en')">EN</button>
-            <button onclick="toggleLanguage('de')">DE</button>
+            <button id="language-toggle-button" onclick="toggleLanguage()">DE</button>
         </div>
 
         <div id="content-en" class="language-content">
@@ -271,11 +270,11 @@
                     <div class="service-card">
                         <i class="fas fa-comments"></i>
                         <h3>Chat Assistants</h3>
-                        <p>We excel in modelling chat assistants to the client's specific needs so as to bring a new way of interaction for users with their business. Tasks such as booking, FAQ’s, and information search can be integrated into the Assistant seamlessly. Our expert team can help your business grow with the best chat assistant suited to your business with the power of AI.</p>
+                        <p>We excel in modelling chat assistants to the client's specific needs so as to bring a new way of interaction for users with their business. Tasks such as booking, FAQ’s and information search can be integrated into the Assistant seamlessly. Our expert team can help your business grow with the best chat assistant suited to your business with the power of AI.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>Web Application Development</h3>
+                        <h3>Web Development</h3>
                         <p>We excel in creating modern, responsive, and user-friendly Web applications that cater to diverse industries. Our expertise spans front-end and back-end development, database design, security, and scalability, ensuring seamless performance and an exceptional user experience.</p>
                         <ul>
                             <li>Highly Interactive and Easy to Use Web Interfaces</li>
@@ -326,7 +325,7 @@
             <!-- German content here -->
             <section id="about">
                 <h2>Über Ava UberX</h2>
-                <p>Ava UberX e.K. ist ein eingetragenes Unternehmen mit Sitz in Deutschland, das sich auf hochmoderne Technologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung, Cloud Computing und Beratungsdienste spezialisiert hat. Mit einem Team von hochqualifizierten Fachleuten und einer Leidenschaft für Innovation streben wir danach, erstklassige Dienstleistungen zu bieten, die die Erwartungen unserer Kunden übertreffen.</p>
+                <p>Ava UberX e.K. ist ein eingetragenes Unternehmen mit Sitz in Deutschland, das sich auf hochmoderne Technologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung, Cloud-Computing und Beratungsdienste spezialisiert hat. Mit einem Team hochqualifizierter Fachleute und einer Leidenschaft für Innovationen streben wir danach, erstklassige Dienstleistungen zu bieten, die die Erwartungen unserer Kunden übertreffen.</p>
             </section>
 
             <section id="services">
@@ -335,9 +334,9 @@
                     <div class="service-card">
                         <i class="fas fa-network-wired"></i>
                         <h3>Internet der Dinge (IoT)</h3>
-                        <p>Unsere IoT-Experten können maßgeschneiderte IoT-Lösungen entwickeln, die Ihren spezifischen Anforderungen entsprechen. Von intelligenten Geräten und Sensoren bis hin zu Datenanalysen und IoT-Plattformen bieten wir umfassende IoT-Lösungen zur Transformation Ihrer Geschäftsprozesse.</p>
+                        <p>Unsere IoT-Experten können IoT-Lösungen entwerfen und entwickeln, die auf Ihre spezifischen Anforderungen zugeschnitten sind. Von Smart Devices und Sensoren bis hin zu Datenanalysen und IoT-Plattformen bieten wir End-to-End-IoT-Lösungen zur Transformation Ihrer Geschäftsabläufe.</p>
                         <ul>
-                            <li>Kostengünstige IoT-Geräteentwicklung basierend auf DIY</li>
+                            <li>Kostengünstige IoT-Geräteentwicklung auf DIY-Basis</li>
                             <li>IoT-Kommunikation: LoRa, Bluetooth, …</li>
                             <li>IoT-Protokolle: MQTT, REST, Websocket, …</li>
                             <li>IoT-Gateways: Edge, Fog</li>
@@ -347,7 +346,7 @@
                     <div class="service-card">
                         <i class="fas fa-cloud"></i>
                         <h3>Cloud Computing</h3>
-                        <p>Nutzen Sie die Vorteile des Cloud Computings mit unseren Dienstleistungen. Wir bieten Cloud-Migration, Infrastrukturaufbau, Cloud-Architekturdesign und verwaltete Cloud-Dienste an, damit Ihr Unternehmen die Flexibilität und Skalierbarkeit der Cloud nutzen kann.</p>
+                        <p>Nutzen Sie die Vorteile des Cloud Computing mit unseren Dienstleistungen. Wir bieten Cloud-Migration, Infrastruktur-Setup, Cloud-Architektur-Design und verwaltete Cloud-Dienste an, um Ihrem Unternehmen die Flexibilität und Skalierbarkeit der Cloud zu ermöglichen.</p>
                         <ul>
                             <li>Amazon Web Services</li>
                             <li>Microsoft Azure</li>
@@ -357,86 +356,92 @@
                     <div class="service-card">
                         <i class="fas fa-brain"></i>
                         <h3>Künstliche Intelligenz (KI)</h3>
-                        <p>Unsere KI-Dienstleistungen umfassen eine Vielzahl von Lösungen, einschließlich maschineller Lernalgorithmen, natürlicher Sprachverarbeitung, Computer Vision, prädiktiver Analytik und mehr. Wir helfen Ihnen, die Kraft der KI zu nutzen, um Effizienz zu steigern, Prozesse zu automatisieren und datengestützte Entscheidungen zu treffen.</p>
+                        <p>Unsere KI-Dienste umfassen eine breite Palette von Lösungen, darunter maschinelles Lernen, natürliche Sprachverarbeitung, Computer Vision, prädiktive Analytik und mehr. Wir helfen Ihnen, die Macht der KI zu nutzen, um Effizienz zu steigern, Prozesse zu automatisieren und datenbasierte Entscheidungen zu treffen.</p>
                         <ul>
-                            <li>Maschinelles Lernen Lösungen</li>
-                            <li>Tiefes Lernen Lösungen</li>
+                            <li>Machine Learning-Lösungen</li>
+                            <li>Deep Learning-Lösungen</li>
                             <li>Generative KI-Beratung: Prompt Engineering, LLMs und RAGs-Beratung</li>
-                            <li>Lösungen auf Basis von großen Sprachmodellen (Essay Writing, Zusammenfassung, Übersetzung, Informationsbeschaffung, intelligente Chatbots für jede Dienstleistung)</li>
-                            <li>Nachverkaufspreise für alle Branchen (Automotive, Einzelhandel usw.)</li>
+                            <li>Lösungen basierend auf großen Sprachmodellen (Essay Writing, Zusammenfassung, Übersetzung, Informationsretrieval, intelligente Chatbots für jeden Service)</li>
+                            <li>After Sales Pricing für alle Branchen (Automotive, Einzelhandel usw.)</li>
                             <li>Sprachverständnis</li>
-                            <li>Retrieval Augmented Generation → Daten, die spezifisch auf die Anforderungen des Kunden zugeschnitten sind, und Bereitstellung entweder als Frage-Antwort-System oder Chat-Assistenten-System.</li>
+                            <li>Retrieval Augmented Generation → Daten spezifisch für Kundenanforderungen kuratieren und entweder als Frage-Antwort-System oder Chat-Assistenten-System bereitstellen.</li>
                         </ul>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-comments"></i>
                         <h3>Chat-Assistenten</h3>
-                        <p>Wir sind darauf spezialisiert, Chat-Assistenten nach den spezifischen Bedürfnissen des Kunden zu modellieren, um eine neue Art der Interaktion für Benutzer mit ihrem Unternehmen zu bieten. Aufgaben wie Buchungen, FAQs und Informationssuche können nahtlos in den Assistenten integriert werden. Unser Expertenteam kann Ihrem Unternehmen helfen, mit dem besten Chat-Assistenten, der auf Ihr Unternehmen zugeschnitten ist, zu wachsen, unterstützt durch die Kraft der KI.</p>
+                        <p>Wir sind spezialisiert auf die Modellierung von Chat-Assistenten nach den spezifischen Bedürfnissen des Kunden, um eine neue Interaktionsmöglichkeit für Nutzer mit ihrem Geschäft zu bieten. Aufgaben wie Buchungen, FAQs und Informationssuche können nahtlos in den Assistenten integriert werden. Unser Expertenteam kann Ihrem Unternehmen helfen, mit dem besten Chat-Assistenten, der auf Ihr Geschäft zugeschnitten ist, durch die Kraft der KI zu wachsen.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-laptop-code"></i>
                         <h3>Webanwendungsentwicklung</h3>
-                        <p>Wir sind spezialisiert auf die Erstellung moderner, responsiver und benutzerfreundlicher Webanwendungen für verschiedene Branchen. Unsere Expertise umfasst Front-End- und Back-End-Entwicklung, Datenbankdesign, Sicherheit und Skalierbarkeit, um eine nahtlose Leistung und eine außergewöhnliche Benutzererfahrung zu gewährleisten.</p>
+                        <p>Wir sind darauf spezialisiert, moderne, reaktionsfähige und benutzerfreundliche Webanwendungen zu erstellen, die verschiedenen Branchen gerecht werden. Unser Fachwissen umfasst Front-End- und Back-End-Entwicklung, Datenbankdesign, Sicherheit und Skalierbarkeit, um nahtlose Leistung und ein außergewöhnliches Benutzererlebnis zu gewährleisten.</p>
                         <ul>
-                            <li>Hochinteraktive und benutzerfreundliche Weboberflächen</li>
+                            <li>Hochinteraktive und benutzerfreundliche Webschnittstellen</li>
                             <li>Datenvisualisierungen</li>
-                            <li>Moderne Weboberflächen</li>
-                            <li>Einzigartige Benutzererfahrung</li>
+                            <li>Moderne Webschnittstellen</li>
+                            <li>Einzigartiges Benutzererlebnis</li>
                         </ul>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-users-cog"></i>
                         <h3>Beratungsdienste</h3>
-                        <p>Wir bieten fachkundige Beratungsdienste an, um Ihnen zu helfen, Ihre Technologiebemühungen an Ihren Geschäftszielen und Forschungszielen auszurichten. Unser Beraterteam kann Sie durch komplexe technologische Herausforderungen führen und Ihre IT-Infrastruktur und -Prozesse für maximale Effizienz optimieren.</p>
+                        <p>Wir bieten professionelle Beratungsdienste an, um Ihre Technologiebestrebungen mit Ihren geschäftlichen und Forschungszielen in Einklang zu bringen. Unser Beratungsteam kann Sie durch komplexe technologische Herausforderungen führen und Ihre IT-Infrastruktur und -Prozesse für maximale Effizienz optimieren.</p>
                         <ul>
-                            <li>Unternehmen: Zum Beispiel Beratung und Integration Ihrer IT-Infrastruktur mit Unternehmensdiensten verschiedener Anbieter:</li>
+                            <li>Enterprise: Zum Beispiel Beratung und Integration Ihrer IT-Infrastruktur mit Enterprise-Diensten verschiedener Anbieter:</li>
                             <li>Microsoft-Dienste: Azure, Teams, Sharepoint usw.</li>
                             <li>Google-Dienste: Google Cloud, Drive usw.</li>
-                            <li>Tiefenlernprojekte</li>
+                            <li>Deep Learning-Projekte</li>
                             <li>SAP-Dienste: S/4HANA, SuccessFactors, Ariba, SAP Customer Experience</li>
                             <li>HR-Management-Lösungen: ingentis org.manager, Lucidchart, Pingboard, OrgChart Now, BambooHR, Visio</li>
-                            <li>Forschung und Entwicklung: F&E zu den allgemeinen Themen IoT, Cloud, KI, Web sowie Energieeffizienz.</li>
+                            <li>Forschung und Entwicklung: R&D zu den allgemeinen Themen IoT, Cloud, KI, Web sowie Energieeffizienz.</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <section id="why-us">
-                <h2>Warum Uns Wählen</h2>
+                <h2>Warum uns wählen?</h2>
                 <ul>
-                    <li>Expertise: Unser Team besteht aus erfahrenen Fachleuten mit umfassendem Wissen über die neuesten Technologien und Trends.</li>
-                    <li>Kundenorientierter Ansatz: Wir legen Wert darauf, Ihre Bedürfnisse zu verstehen und maßgeschneiderte Lösungen anzubieten, die Ihrem Unternehmen einen Mehrwert bieten.</li>
-                    <li>Qualitätssicherung: Wir halten einen strengen Qualitätssicherungsprozess ein, um sicherzustellen, dass unsere Lieferungen den höchsten Standards entsprechen.</li>
-                    <li>Innovation: Wir bleiben stets über die neuesten Fortschritte in unseren Bereichen informiert, um innovative und zukunftssichere Lösungen anzubieten.</li>
+                    <li>Expertise: Unser Team besteht aus erfahrenen Fachleuten mit umfassendem Wissen in den neuesten Technologien und Trends.</li>
+                    <li>Kundenorientierter Ansatz: Wir priorisieren das Verständnis Ihrer Bedürfnisse und bieten maßgeschneiderte Lösungen, die Ihrem Unternehmen Mehrwert bieten.</li>
+                    <li>Qualitätssicherung: Wir halten einen strengen Qualitätssicherungsprozess ein, um sicherzustellen, dass unsere Lieferungen von höchstem Standard sind.</li>
+                    <li>Innovation: Wir bleiben auf dem neuesten Stand der Entwicklungen in unseren Bereichen, um innovative und zukunftssichere Lösungen anzubieten.</li>
                 </ul>
             </section>
 
             <section id="contact">
-                <h2>Kontaktieren Sie Uns</h2>
-                <p>Für Anfragen oder um Ihre Projektanforderungen zu besprechen, kontaktieren Sie uns bitte unter:</p>
-                <p>Vollständiger Name: Dr.-Ing. Mehdi Sheikhalishahi</p>
-                <p>Email: <a href="mailto:mehdi.alishahi@gmail.com">mehdi.alishahi@gmail.com</a></p>
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Für Anfragen oder um Ihre Projektanforderungen zu besprechen, wenden Sie sich bitte an:</p>
+                <p>Name: Dr.-Ing. Mehdi Sheikhalishahi</p>
+                <p>E-Mail: <a href="mailto:mehdi.alishahi@gmail.com">mehdi.alishahi@gmail.com</a></p>
                 <div class="cta">
-                    <a href="mailto:mehdi.alishahi@gmail.com" class="cta-button">Kontakt Aufnehmen</a>
+                    <a href="mailto:mehdi.alishahi@gmail.com" class="cta-button">Kontakt aufnehmen</a>
                 </div>
             </section>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Ava UberX e.K. | All Rights Reserved</p>
+        <p>&copy; 2024 Ava UberX e.K. All rights reserved.</p>
     </footer>
 
     <script>
-        function toggleLanguage(lang) {
-            document.querySelectorAll('.language-content').forEach(el => {
-                el.classList.add('hidden');
-            });
-            document.getElementById(`content-${lang}`).classList.remove('hidden');
-        }
+        function toggleLanguage() {
+            const contentEn = document.getElementById('content-en');
+            const contentDe = document.getElementById('content-de');
+            const button = document.getElementById('language-toggle-button');
 
-        // Initialize with English content shown
-        toggleLanguage('en');
+            if (contentEn.classList.contains('hidden')) {
+                contentEn.classList.remove('hidden');
+                contentDe.classList.add('hidden');
+                button.textContent = 'DE';
+            } else {
+                contentEn.classList.add('hidden');
+                contentDe.classList.remove('hidden');
+                button.textContent = 'EN';
+            }
+        }
     </script>
 </body>
 </html>
