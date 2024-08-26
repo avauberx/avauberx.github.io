@@ -26,8 +26,6 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
         }
 
         .container {
@@ -39,18 +37,18 @@
         header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 40px 0;
+            padding: 60px 0;
             text-align: center;
         }
 
         .logo {
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: 700;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .tagline {
-            font-size: 1em;
+            font-size: 1.2em;
             font-weight: 300;
         }
 
@@ -66,12 +64,11 @@
             display: flex;
             justify-content: center;
             list-style-type: none;
-            padding: 10px 0;
-            flex-wrap: wrap;
+            padding: 15px 0;
         }
 
         nav ul li {
-            margin: 5px 15px;
+            margin: 0 15px;
         }
 
         nav ul li a {
@@ -79,30 +76,25 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
-            padding: 8px 12px;
-            border-radius: 5px;
         }
 
         nav ul li a:hover {
             color: var(--primary-color);
-            background-color: var(--bg-color);
         }
 
         .language-toggle {
             text-align: right;
-            padding: 10px 0;
+            padding: 20px 0;
         }
 
         .language-toggle button {
             background-color: transparent;
             border: 2px solid var(--primary-color);
             color: var(--primary-color);
-            padding: 6px 12px;
+            padding: 8px 15px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 600;
-            border-radius: 5px;
-            font-size: 0.9em;
         }
 
         .language-toggle button:hover {
@@ -111,26 +103,25 @@
         }
 
         h2 {
-            font-size: 1.8em;
+            font-size: 2em;
             color: var(--primary-color);
-            margin: 30px 0 15px;
+            margin: 40px 0 20px;
             text-align: center;
         }
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
         }
 
         .service-card {
             background-color: var(--card-bg);
             border-radius: 10px;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
         }
 
         .service-card:hover {
@@ -139,25 +130,19 @@
         }
 
         .service-card i {
-            font-size: 2em;
+            font-size: 2.5em;
             color: var(--primary-color);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .service-card h3 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
             color: var(--secondary-color);
         }
 
-        .service-card p {
-            font-size: 0.9em;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
         .experience-section {
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         .experience-card {
@@ -166,7 +151,7 @@
             padding: 20px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .experience-card:hover {
@@ -175,19 +160,18 @@
         }
 
         .experience-card h3 {
-            font-size: 1.3em;
+            font-size: 1.5em;
             color: var(--primary-color);
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .experience-card ul {
             list-style-type: none;
             padding-left: 0;
-            font-size: 0.9em;
         }
 
         .experience-card ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .experience-card ul li a {
@@ -203,19 +187,18 @@
 
         .cta {
             text-align: center;
-            margin: 50px 0;
+            margin: 60px 0;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 15px 30px;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
             transition: background-color 0.3s ease;
-            font-size: 1em;
         }
 
         .cta-button:hover {
@@ -226,8 +209,8 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
+            padding: 30px 0;
+            margin-top: 60px;
         }
 
         .hidden {
@@ -235,58 +218,8 @@
         }
 
         @media (max-width: 768px) {
-            header {
-                padding: 30px 0;
-            }
-
-            .logo {
-                font-size: 1.5em;
-            }
-
-            .tagline {
-                font-size: 0.9em;
-            }
-
-            nav ul li {
-                margin: 3px 10px;
-            }
-
-            nav ul li a {
-                font-size: 0.9em;
-                padding: 6px 10px;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            .service-card {
-                padding: 15px;
-            }
-
-            .service-card i {
-                font-size: 1.8em;
-            }
-
-            .service-card h3 {
-                font-size: 1.2em;
-            }
-
-            .experience-card {
-                padding: 15px;
-            }
-
-            .experience-card h3 {
-                font-size: 1.2em;
-            }
-
-            .cta-button {
-                padding: 10px 20px;
-                font-size: 0.9em;
-            }
-
-            footer {
-                padding: 15px 0;
+            .services {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -318,127 +251,199 @@
             <!-- English content here -->
             <section id="about">
                 <h2>About Ava UberX</h2>
-                <p>Ava UberX GbR is a registered company based in Germany, specializing in cutting-edge technology solutions in the fields of AI, Internet of Things (IoT), Web Application Development, and Cybersecurity. Our mission is to provide innovative and reliable services that meet the needs of our clients, helping them stay ahead in the ever-evolving digital landscape.</p>
+                <p>Ava UberX GbR is a registered company based in Germany, specializing in cutting-edge technology solutions in the fields of AI, Internet of Things (IoT), Web Application Development, Cloud Computing, and Consultation Services. With a team of highly skilled professionals and a passion for innovation, we strive to deliver top-notch services that exceed our clients' expectations.</p>
             </section>
 
             <section id="services">
                 <h2>Our Services</h2>
                 <div class="services">
                     <div class="service-card">
-                        <i class="fas fa-robot"></i>
-                        <h3>AI Development</h3>
-                        <p>Transform your business with custom AI solutions that drive efficiency, innovation, and growth. Our AI experts are ready to build intelligent systems tailored to your needs.</p>
-                    </div>
-                    <div class="service-card">
                         <i class="fas fa-network-wired"></i>
-                        <h3>IoT Solutions</h3>
-                        <p>Connect, control, and manage your devices with our advanced IoT solutions, providing you with real-time data and insights to optimize operations.</p>
+                        <h3>Internet of Things (IoT)</h3>
+                        <p>Our IoT experts can design and develop IoT solutions tailored to your specific requirements. From smart devices and sensors to data analytics and IoT platforms, we provide end-to-end IoT solutions to transform your business operations.</p>
+                        <ul>
+                            <li>Low-cost IoT device development based on DIY</li>
+                            <li>IoT communications: LoRa, Bluetooth, …</li>
+                            <li>IoT protocols: MQTT, REST, Websocket, …</li>
+                            <li>IoT gateways: Edge, Fog</li>
+                            <li>Enterprise applications such as Waziup e.V.</li>
+                        </ul>
                     </div>
                     <div class="service-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Web Application Development</h3>
-                        <p>Create powerful and user-friendly web applications that are scalable, secure, and designed to meet your business objectives.</p>
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Computing</h3>
+                        <p>Embrace the advantages of cloud computing with our services. We offer cloud migration, infrastructure setup, cloud architecture design, and managed cloud services, enabling your business to leverage the cloud's flexibility and scalability.</p>
+                        <ul>
+                            <li>Amazon Web Services</li>
+                            <li>Microsoft Azure</li>
+                            <li>Google Cloud Platform</li>
+                        </ul>
                     </div>
                     <div class="service-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersecurity</h3>
-                        <p>Protect your digital assets with our comprehensive cybersecurity services, including risk assessments, vulnerability management, and threat mitigation.</p>
+                        <i class="fas fa-brain"></i>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Transform your data into insights with our AI and machine learning solutions. We provide AI strategy development, custom AI model creation, and implementation to help your business gain a competitive edge.</p>
+                        <ul>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Predictive Analytics</li>
+                            <li>Data-Driven Decision Making</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
+            <!-- Experiences Section -->
             <section id="experiences" class="experience-section">
-                <h2>Our Experiences</h2>
+                <h2>Experiences</h2>
+                <p>Here is a selected list of projects that contribute to each area. The staff of our company have contributed to these projects in the past.</p>
+
                 <div class="experience-card">
-                    <h3>Successful AI Integration for Retail</h3>
+                    <h3>Digital Transformation</h3>
                     <ul>
-                        <li><a href="#experience1">Increased sales by 25% through AI-driven customer recommendations.</a></li>
-                        <li><a href="#experience2">Reduced operational costs by 15% with predictive analytics.</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform</a> | <a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf" target="_blank">iKaaS PPT</a></li>
+                        <li><a href="https://github.com/avauberx/entry-graph" target="_blank">Entry Graph (EG)</a></li>
+                        <li>Asset Manager: To be open-sourced</li>
                     </ul>
                 </div>
+
                 <div class="experience-card">
-                    <h3>IoT Solutions for Smart Homes</h3>
+                    <h3>Green, Neutral Climate, Energy Efficiency</h3>
                     <ul>
-                        <li><a href="#experience3">Implemented a smart home system that increased energy efficiency by 30%.</a></li>
-                        <li><a href="#experience4">Developed a secure platform for remote device management.</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities Project Info</a></li>
+                        <li><a href="https://integroil.eu/" target="_blank">Water Reuse in the Oil & Gas Industry</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform Project Info</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Smart City & Village</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub Project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup Project Info</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities Project Info</a></li>
+                        <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">Intelligent Knowledge-as-a-Service Platform</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>DIY Internet of Things: Low-Cost, LoRa, LoRaWAN</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub Project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup Project Info</a></li>
                     </ul>
                 </div>
             </section>
 
-            <section id="why-us">
-                <h2>Why Choose Us?</h2>
-                <p>At Ava UberX, we are committed to delivering top-quality services that are tailored to your specific needs. Our team of experts stays up-to-date with the latest technology trends, ensuring that we provide solutions that are not only effective but also future-proof. We take pride in our customer-centric approach, where your satisfaction is our top priority.</p>
-            </section>
-
-            <section id="contact" class="cta">
-                <h2>Get in Touch</h2>
-                <p>Ready to take your business to the next level? Contact us today and let's discuss how we can help you achieve your goals.</p>
-                <a href="mailto:info@avauberx.com" class="cta-button">Contact Us</a>
-            </section>
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
         </div>
 
         <div id="content-de" class="language-content hidden">
             <!-- German content here -->
             <section id="about">
                 <h2>Über Ava UberX</h2>
-                <p>Ava UberX GbR ist ein in Deutschland registriertes Unternehmen, das sich auf modernste Technologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung und Cybersicherheit spezialisiert hat. Unsere Mission ist es, innovative und zuverlässige Dienstleistungen zu bieten, die den Bedürfnissen unserer Kunden gerecht werden und ihnen helfen, im sich ständig weiterentwickelnden digitalen Umfeld an der Spitze zu bleiben.</p>
+                <p>Ava UberX GbR ist ein in Deutschland ansässiges Unternehmen, das sich auf Spitzentechnologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung, Cloud Computing und Beratungsdienstleistungen spezialisiert hat. Mit einem Team hochqualifizierter Fachleute und einer Leidenschaft für Innovationen streben wir danach, erstklassige Dienstleistungen zu erbringen, die die Erwartungen unserer Kunden übertreffen.</p>
             </section>
 
             <section id="services">
                 <h2>Unsere Dienstleistungen</h2>
                 <div class="services">
                     <div class="service-card">
-                        <i class="fas fa-robot"></i>
-                        <h3>KI-Entwicklung</h3>
-                        <p>Transformieren Sie Ihr Unternehmen mit maßgeschneiderten KI-Lösungen, die Effizienz, Innovation und Wachstum fördern. Unsere KI-Experten sind bereit, intelligente Systeme zu entwickeln, die auf Ihre Bedürfnisse zugeschnitten sind.</p>
-                    </div>
-                    <div class="service-card">
                         <i class="fas fa-network-wired"></i>
-                        <h3>IoT-Lösungen</h3>
-                        <p>Verbinden, steuern und verwalten Sie Ihre Geräte mit unseren fortschrittlichen IoT-Lösungen, die Ihnen Echtzeit-Daten und Einblicke bieten, um Ihre Abläufe zu optimieren.</p>
+                        <h3>Internet der Dinge (IoT)</h3>
+                        <p>Unsere IoT-Experten können IoT-Lösungen entwickeln und implementieren, die speziell auf Ihre Anforderungen zugeschnitten sind. Von intelligenten Geräten und Sensoren bis hin zu Datenanalysen und IoT-Plattformen bieten wir End-to-End-IoT-Lösungen, um Ihre Geschäftsabläufe zu transformieren.</p>
+                        <ul>
+                            <li>Niedrigkosten-IoT-Geräteentwicklung basierend auf DIY</li>
+                            <li>IoT-Kommunikationen: LoRa, Bluetooth, …</li>
+                            <li>IoT-Protokolle: MQTT, REST, Websocket, …</li>
+                            <li>IoT-Gateways: Edge, Fog</li>
+                            <li>Unternehmensanwendungen wie Waziup e.V.</li>
+                        </ul>
                     </div>
                     <div class="service-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Webanwendungsentwicklung</h3>
-                        <p>Erstellen Sie leistungsstarke und benutzerfreundliche Webanwendungen, die skalierbar, sicher und darauf ausgelegt sind, Ihre Geschäftsziele zu erreichen.</p>
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Computing</h3>
+                        <p>Nutzen Sie die Vorteile des Cloud Computing mit unseren Dienstleistungen. Wir bieten Cloud-Migration, Infrastruktur-Setup, Cloud-Architektur-Design und Managed-Cloud-Services, damit Ihr Unternehmen die Flexibilität und Skalierbarkeit der Cloud nutzen kann.</p>
+                        <ul>
+                            <li>Amazon Web Services</li>
+                            <li>Microsoft Azure</li>
+                            <li>Google Cloud Platform</li>
+                        </ul>
                     </div>
                     <div class="service-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersicherheit</h3>
-                        <p>Schützen Sie Ihre digitalen Assets mit unseren umfassenden Cybersicherheitsdienstleistungen, einschließlich Risikobewertungen, Schwachstellenmanagement und Bedrohungsminderung.</p>
+                        <i class="fas fa-brain"></i>
+                        <h3>Künstliche Intelligenz</h3>
+                        <p>Verwandeln Sie Ihre Daten in Erkenntnisse mit unseren KI- und Machine-Learning-Lösungen. Wir bieten die Entwicklung von KI-Strategien, die Erstellung von maßgeschneiderten KI-Modellen und deren Implementierung, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.</p>
+                        <ul>
+                            <li>Verarbeitung natürlicher Sprache</li>
+                            <li>Computer Vision</li>
+                            <li>Predictive Analytics</li>
+                            <li>Datengetriebene Entscheidungsfindung</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
+            <!-- German Experiences Section -->
             <section id="experiences" class="experience-section">
-                <h2>Unsere Erfahrungen</h2>
+                <h2>Erfahrungen</h2>
+                <p>Nachfolgend finden Sie eine Auswahl von Projekten, die in den jeweiligen Bereichen einen Beitrag leisten. Die Mitarbeiter unseres Unternehmens haben in der Vergangenheit an diesen Projekten mitgewirkt.</p>
+
                 <div class="experience-card">
-                    <h3>Erfolgreiche KI-Integration im Einzelhandel</h3>
+                    <h3>Digitale Transformation</h3>
                     <ul>
-                        <li><a href="#experience1">Umsatzsteigerung um 25 % durch KI-gestützte Kundenempfehlungen.</a></li>
-                        <li><a href="#experience2">Reduzierung der Betriebskosten um 15 % durch prädiktive Analysen.</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform project info</a> | <a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf" target="_blank">iKaaS PPT</a></li>
+                        <li><a href="https://github.com/avauberx/entry-graph" target="_blank">Entry Graph (EG)</a></li>
+                        <li><a href="#">Asset Manager</a>: to be open sourced.</li>
                     </ul>
                 </div>
+
                 <div class="experience-card">
-                    <h3>IoT-Lösungen für Smart Homes</h3>
+                    <h3>Grün, Klimaneutral, Energieeffizienz</h3>
                     <ul>
-                        <li><a href="#experience3">Implementierung eines Smart-Home-Systems, das die Energieeffizienz um 30 % steigert.</a></li>
-                        <li><a href="#experience4">Entwicklung einer sicheren Plattform für das Remote-Gerätemanagement.</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
+                        <li><a href="https://integroil.eu/" target="_blank">Water reuse in the Oil & Gas industry</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform project info</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Intelligente Stadt und Dorf</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
+                        <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">intelligent Knowledge-as-a-Service Platform</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>DIY Internet der Dinge: Niedrige Kosten, LoRa, LoRaWAN</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
                     </ul>
                 </div>
             </section>
 
-            <section id="why-us">
-                <h2>Warum Uns Wählen?</h2>
-                <p>Bei Ava UberX sind wir bestrebt, erstklassige Dienstleistungen zu erbringen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind. Unser Expertenteam bleibt über die neuesten Technologietrends auf dem Laufenden, um sicherzustellen, dass wir Lösungen anbieten, die nicht nur effektiv, sondern auch zukunftssicher sind. Wir sind stolz auf unseren kundenorientierten Ansatz, bei dem Ihre Zufriedenheit unsere oberste Priorität ist.</p>
-            </section>
-
-            <section id="contact" class="cta">
-                <h2>Kontaktieren Sie Uns</h2>
-                <p>Bereit, Ihr Unternehmen auf die nächste Stufe zu heben? Kontaktieren Sie uns noch heute und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.</p>
-                <a href="mailto:info@avauberx.com" class="cta-button">Kontaktieren Sie Uns</a>
-            </section>
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="#contact" class="cta-button">Kontaktieren Sie uns</a>
+            </div>
         </div>
+
+        <section id="why-us">
+            <h2>Why Choose Ava UberX?</h2>
+            <p>Our team has years of experience working on state-of-the-art technologies and a passion for innovation. We pride ourselves on delivering top-quality services tailored to our clients' needs.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you are interested in our services or have any questions, feel free to reach out to us. We are here to help you bring your ideas to life.</p>
+        </section>
     </div>
 
     <footer>
@@ -447,17 +452,17 @@
 
     <script>
         function toggleLanguage() {
-            var enContent = document.getElementById('content-en');
-            var deContent = document.getElementById('content-de');
-            var toggleButton = document.getElementById('language-toggle-button');
+            const contentEn = document.getElementById('content-en');
+            const contentDe = document.getElementById('content-de');
+            const toggleButton = document.getElementById('language-toggle-button');
 
-            if (enContent.classList.contains('hidden')) {
-                enContent.classList.remove('hidden');
-                deContent.classList.add('hidden');
+            if (contentEn.classList.contains('hidden')) {
+                contentEn.classList.remove('hidden');
+                contentDe.classList.add('hidden');
                 toggleButton.textContent = 'DE';
             } else {
-                enContent.classList.add('hidden');
-                deContent.classList.remove('hidden');
+                contentEn.classList.add('hidden');
+                contentDe.classList.remove('hidden');
                 toggleButton.textContent = 'EN';
             }
         }
