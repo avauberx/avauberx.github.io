@@ -141,23 +141,48 @@
             color: var(--secondary-color);
         }
 
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
+        .experience-section {
+            margin-top: 60px;
         }
 
-        ul li {
-            margin-bottom: 10px;
-            position: relative;
+        .experience-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
         }
 
-        ul li::before {
-            content: "\f00c";
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-card h3 {
+            font-size: 1.5em;
             color: var(--primary-color);
-            position: absolute;
-            left: -20px;
+            margin-bottom: 10px;
+        }
+
+        .experience-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .experience-card ul li {
+            margin-bottom: 10px;
+        }
+
+        .experience-card ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .experience-card ul li a:hover {
+            color: var(--primary-color);
         }
 
         .cta {
@@ -211,6 +236,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#why-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -250,122 +276,76 @@
                         <ul>
                             <li>Amazon Web Services</li>
                             <li>Microsoft Azure</li>
-                            <li>Google Cloud</li>
+                            <li>Google Cloud Platform</li>
                         </ul>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-brain"></i>
-                        <h3>Artificial Intelligence (AI)</h3>
-                        <p>Our AI services encompass a wide range of solutions, including machine learning algorithms, natural language processing, computer vision, predictive analytics, and more. We can help you harness the power of AI to enhance efficiency, automate processes, and make data-driven decisions.</p>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Transform your data into insights with our AI and machine learning solutions. We provide AI strategy development, custom AI model creation, and implementation to help your business gain a competitive edge.</p>
                         <ul>
-                            <li>Machine Learning Solutions</li>
-                            <li>Deep Learning Solutions</li>
-                            <li>Generative AI consultation: Prompt Engineering, LLMs and RAGs consultation</li>
-                            <li>Solutions based on Large Language Model (Essay Writing, Summarization, Translation, Information Retrieval, Intelligent Chatbots for Any Service)</li>
-                            <li>After Sales Pricing for All Industries (Automotives, Retails, etc.)</li>
-                            <li>Language Understanding</li>
-                            <li>Retrieval Augmented Generation → Curating data specific to Client requirements and deploying either as a Question Answering or Chat Assistant system.</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-comments"></i>
-                        <h3>Chat Assistants</h3>
-                        <p>We excel in modelling chat assistants to the client's specific needs so as to bring a new way of interaction for users with their business. Tasks such as booking, FAQ’s and information search can be integrated into the Assistant seamlessly. Our expert team can help your business grow with the best chat assistant suited to your business with the power of AI.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Web Development</h3>
-                        <p>We excel in creating modern, responsive, and user-friendly Web applications that cater to diverse industries. Our expertise spans front-end and back-end development, database design, security, and scalability, ensuring seamless performance and an exceptional user experience.</p>
-                        <ul>
-                            <li>Highly Interactive and Easy to Use Web Interfaces</li>
-                            <li>Data Visualizations</li>
-                            <li>Modern Web Interfaces</li>
-                            <li>Unique User Experience</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-users-cog"></i>
-                        <h3>Consultation Services</h3>
-                        <p>We provide expert consultation services to help you align your technology strategies with your business and research goals. Our team of consultants can guide you through complex technological challenges, optimizing your IT infrastructure and processes for maximum efficiency.</p>
-                        <ul>
-                            <li>Enterprise: For example, consultation & integration of your IT infrastructure with Enterprise services from various providers:</li>
-                            <li>Microsoft services: Azure, Teams, Sharepoint, etc.</li>
-                            <li>Google services: Google Cloud, Drive, etc.</li>
-                            <li>Deep Learning projects</li>
-                            <li>SAP Services: S/4HANA, SuccessFactors, Ariba, SAP Customer Experience</li>
-                            <li>HR Management Solutions: ingentis org.manager, Lucidchart, Pingboard, OrgChart Now, BambooHR, Visio</li>
-                            <li>Research and Development: R&D on the general topics of IoT, Cloud, AI, Web as well as Energy Efficiency.</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Predictive Analytics</li>
+                            <li>Data-Driven Decision Making</li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section id="experiences">
+
+            <!-- Experiences Section -->
+            <section id="experiences" class="experience-section">
                 <h2>Experiences</h2>
-                <p>In the following, there are a selected list of projects which contribute into each area. The staff of our company have contributed into these projects in the past.</p>
-            
-                <h3>Digital Transformation</h3>
-                <ul>
-                    <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">intelligent Knowledge-as-a-Service Platform project info</a> | <a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf" target="_blank">iKaaS PPT</a></li>
-                    <li><a href="https://github.com/avauberx/entry-graph" target="_blank">Entry Graph (EG)</a></li>
-                    <li>Asset Manager: to be open sourced.</li>
-                </ul>
-            
-                <h3>Green, Neutral Climate, Energy Efficiency</h3>
-                <ul>
-                    <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
-                    <li><a href="https://integroil.eu/" target="_blank">Water reuse in the Oil & Gas industry</a></li>
-                    <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">intelligent Knowledge-as-a-Service Platform project info</a></li>
-                </ul>
-            
-                <h3>Smart City & Village</h3>
-                <ul>
-                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
-                    <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
-                    <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
-                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">intelligent Knowledge-as-a-Service Platform</a></li>
-                </ul>
-            
-                <h3>Smart Mobility</h3>
-                <ul>
-                    <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
-                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">intelligent Knowledge-as-a-Service Platform</a></li>
-                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
-                    <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
-                </ul>
-            
-                <h3>DIY Internet of Things: Low-Cost, LoRa, LoRaWAN</h3>
-                <ul>
-                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
-                    <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
-                </ul>
-            </section>
+                <p>Here is a selected list of projects that contribute to each area. The staff of our company have contributed to these projects in the past.</p>
 
-            <section id="why-us">
-                <h2>Why Choose Us</h2>
-                <ul>
-                    <li>Expertise: Our team consists of experienced professionals with extensive knowledge in the latest technologies and trends.</li>
-                    <li>Customer-Centric Approach: We prioritize understanding your needs and delivering tailored solutions that add value to your business.</li>
-                    <li>Quality Assurance: We maintain a rigorous quality assurance process to ensure our deliverables are of the highest standards.</li>
-                    <li>Innovation: We stay up-to-date with the latest advancements in our fields to offer innovative and future-proof solutions.</li>
-                </ul>
-            </section>
+                <div class="experience-card">
+                    <h3>Digital Transformation</h3>
+                    <ul>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform</a> | <a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf" target="_blank">iKaaS PPT</a></li>
+                        <li><a href="https://github.com/avauberx/entry-graph" target="_blank">Entry Graph (EG)</a></li>
+                        <li>Asset Manager: To be open-sourced</li>
+                    </ul>
+                </div>
 
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>For inquiries or to discuss your project requirements, please reach out to us at:</p>
-                <p>Fullname: Dr.-Ing. Mehdi Sheikhalishahi</p>
-                <p>Email: <a href="mailto:mehdi.alishahi@gmail.com">mehdi.alishahi@gmail.com</a></p>
-                <div class="cta">
-                    <a href="mailto:mehdi.alishahi@gmail.com" class="cta-button">Get in Touch</a>
+                <div class="experience-card">
+                    <h3>Green, Neutral Climate, Energy Efficiency</h3>
+                    <ul>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities Project Info</a></li>
+                        <li><a href="https://integroil.eu/" target="_blank">Water Reuse in the Oil & Gas Industry</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform Project Info</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Smart City & Village</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub Project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup Project Info</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities Project Info</a></li>
+                        <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">Intelligent Knowledge-as-a-Service Platform</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>DIY Internet of Things: Low-Cost, LoRa, LoRaWAN</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub Project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup Project Info</a></li>
+                    </ul>
                 </div>
             </section>
+
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
         </div>
 
         <div id="content-de" class="language-content hidden">
             <!-- German content here -->
             <section id="about">
                 <h2>Über Ava UberX</h2>
-                <p>Ava UberX GbR ist ein eingetragenes Unternehmen mit Sitz in Deutschland, das sich auf hochmoderne Technologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung, Cloud-Computing und Beratungsdienste spezialisiert hat. Mit einem Team hochqualifizierter Fachleute und einer Leidenschaft für Innovationen streben wir danach, erstklassige Dienstleistungen zu bieten, die die Erwartungen unserer Kunden übertreffen.</p>
+                <p>Ava UberX GbR ist ein in Deutschland ansässiges Unternehmen, das sich auf Spitzentechnologielösungen in den Bereichen KI, Internet der Dinge (IoT), Webanwendungsentwicklung, Cloud Computing und Beratungsdienstleistungen spezialisiert hat. Mit einem Team hochqualifizierter Fachleute und einer Leidenschaft für Innovationen streben wir danach, erstklassige Dienstleistungen zu erbringen, die die Erwartungen unserer Kunden übertreffen.</p>
             </section>
 
             <section id="services">
@@ -374,10 +354,10 @@
                     <div class="service-card">
                         <i class="fas fa-network-wired"></i>
                         <h3>Internet der Dinge (IoT)</h3>
-                        <p>Unsere IoT-Experten können IoT-Lösungen entwerfen und entwickeln, die auf Ihre spezifischen Anforderungen zugeschnitten sind. Von Smart Devices und Sensoren bis hin zu Datenanalysen und IoT-Plattformen bieten wir End-to-End-IoT-Lösungen zur Transformation Ihrer Geschäftsabläufe.</p>
+                        <p>Unsere IoT-Experten können IoT-Lösungen entwickeln und implementieren, die speziell auf Ihre Anforderungen zugeschnitten sind. Von intelligenten Geräten und Sensoren bis hin zu Datenanalysen und IoT-Plattformen bieten wir End-to-End-IoT-Lösungen, um Ihre Geschäftsabläufe zu transformieren.</p>
                         <ul>
-                            <li>Kostengünstige IoT-Geräteentwicklung auf DIY-Basis</li>
-                            <li>IoT-Kommunikation: LoRa, Bluetooth, …</li>
+                            <li>Niedrigkosten-IoT-Geräteentwicklung basierend auf DIY</li>
+                            <li>IoT-Kommunikationen: LoRa, Bluetooth, …</li>
                             <li>IoT-Protokolle: MQTT, REST, Websocket, …</li>
                             <li>IoT-Gateways: Edge, Fog</li>
                             <li>Unternehmensanwendungen wie Waziup e.V.</li>
@@ -386,100 +366,104 @@
                     <div class="service-card">
                         <i class="fas fa-cloud"></i>
                         <h3>Cloud Computing</h3>
-                        <p>Nutzen Sie die Vorteile des Cloud Computing mit unseren Dienstleistungen. Wir bieten Cloud-Migration, Infrastruktur-Setup, Cloud-Architektur-Design und verwaltete Cloud-Dienste an, um Ihrem Unternehmen die Flexibilität und Skalierbarkeit der Cloud zu ermöglichen.</p>
+                        <p>Nutzen Sie die Vorteile des Cloud Computing mit unseren Dienstleistungen. Wir bieten Cloud-Migration, Infrastruktur-Setup, Cloud-Architektur-Design und Managed-Cloud-Services, damit Ihr Unternehmen die Flexibilität und Skalierbarkeit der Cloud nutzen kann.</p>
                         <ul>
                             <li>Amazon Web Services</li>
                             <li>Microsoft Azure</li>
-                            <li>Google Cloud</li>
+                            <li>Google Cloud Platform</li>
                         </ul>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-brain"></i>
-                        <h3>Künstliche Intelligenz (KI)</h3>
-                        <p>Unsere KI-Dienste umfassen eine breite Palette von Lösungen, darunter maschinelles Lernen, natürliche Sprachverarbeitung, Computer Vision, prädiktive Analytik und mehr. Wir helfen Ihnen, die Macht der KI zu nutzen, um Effizienz zu steigern, Prozesse zu automatisieren und datenbasierte Entscheidungen zu treffen.</p>
+                        <h3>Künstliche Intelligenz</h3>
+                        <p>Verwandeln Sie Ihre Daten in Erkenntnisse mit unseren KI- und Machine-Learning-Lösungen. Wir bieten die Entwicklung von KI-Strategien, die Erstellung von maßgeschneiderten KI-Modellen und deren Implementierung, um Ihrem Unternehmen einen Wettbewerbsvorteil zu verschaffen.</p>
                         <ul>
-                            <li>Machine Learning-Lösungen</li>
-                            <li>Deep Learning-Lösungen</li>
-                            <li>Generative KI-Beratung: Prompt Engineering, LLMs und RAGs-Beratung</li>
-                            <li>Lösungen basierend auf großen Sprachmodellen (Essay Writing, Zusammenfassung, Übersetzung, Informationsretrieval, intelligente Chatbots für jeden Service)</li>
-                            <li>After Sales Pricing für alle Branchen (Automotive, Einzelhandel usw.)</li>
-                            <li>Sprachverständnis</li>
-                            <li>Retrieval Augmented Generation → Daten spezifisch für Kundenanforderungen kuratieren und entweder als Frage-Antwort-System oder Chat-Assistenten-System bereitstellen.</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-comments"></i>
-                        <h3>Chat-Assistenten</h3>
-                        <p>Wir sind spezialisiert auf die Modellierung von Chat-Assistenten nach den spezifischen Bedürfnissen des Kunden, um eine neue Interaktionsmöglichkeit für Nutzer mit ihrem Geschäft zu bieten. Aufgaben wie Buchungen, FAQs und Informationssuche können nahtlos in den Assistenten integriert werden. Unser Expertenteam kann Ihrem Unternehmen helfen, mit dem besten Chat-Assistenten, der auf Ihr Geschäft zugeschnitten ist, durch die Kraft der KI zu wachsen.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Webanwendungsentwicklung</h3>
-                        <p>Wir sind darauf spezialisiert, moderne, reaktionsfähige und benutzerfreundliche Webanwendungen zu erstellen, die verschiedenen Branchen gerecht werden. Unser Fachwissen umfasst Front-End- und Back-End-Entwicklung, Datenbankdesign, Sicherheit und Skalierbarkeit, um nahtlose Leistung und ein außergewöhnliches Benutzererlebnis zu gewährleisten.</p>
-                        <ul>
-                            <li>Hochinteraktive und benutzerfreundliche Webschnittstellen</li>
-                            <li>Datenvisualisierungen</li>
-                            <li>Moderne Webschnittstellen</li>
-                            <li>Einzigartiges Benutzererlebnis</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-users-cog"></i>
-                        <h3>Beratungsdienste</h3>
-                        <p>Wir bieten professionelle Beratungsdienste an, um Ihre Technologiebestrebungen mit Ihren geschäftlichen und Forschungszielen in Einklang zu bringen. Unser Beratungsteam kann Sie durch komplexe technologische Herausforderungen führen und Ihre IT-Infrastruktur und -Prozesse für maximale Effizienz optimieren.</p>
-                        <ul>
-                            <li>Enterprise: Zum Beispiel Beratung und Integration Ihrer IT-Infrastruktur mit Enterprise-Diensten verschiedener Anbieter:</li>
-                            <li>Microsoft-Dienste: Azure, Teams, Sharepoint usw.</li>
-                            <li>Google-Dienste: Google Cloud, Drive usw.</li>
-                            <li>Deep Learning-Projekte</li>
-                            <li>SAP-Dienste: S/4HANA, SuccessFactors, Ariba, SAP Customer Experience</li>
-                            <li>HR-Management-Lösungen: ingentis org.manager, Lucidchart, Pingboard, OrgChart Now, BambooHR, Visio</li>
-                            <li>Forschung und Entwicklung: R&D zu den allgemeinen Themen IoT, Cloud, KI, Web sowie Energieeffizienz.</li>
+                            <li>Verarbeitung natürlicher Sprache</li>
+                            <li>Computer Vision</li>
+                            <li>Predictive Analytics</li>
+                            <li>Datengetriebene Entscheidungsfindung</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section id="why-us">
-                <h2>Warum uns wählen?</h2>
-                <ul>
-                    <li>Expertise: Unser Team besteht aus erfahrenen Fachleuten mit umfassendem Wissen in den neuesten Technologien und Trends.</li>
-                    <li>Kundenorientierter Ansatz: Wir priorisieren das Verständnis Ihrer Bedürfnisse und bieten maßgeschneiderte Lösungen, die Ihrem Unternehmen Mehrwert bieten.</li>
-                    <li>Qualitätssicherung: Wir halten einen strengen Qualitätssicherungsprozess ein, um sicherzustellen, dass unsere Lieferungen von höchstem Standard sind.</li>
-                    <li>Innovation: Wir bleiben auf dem neuesten Stand der Entwicklungen in unseren Bereichen, um innovative und zukunftssichere Lösungen anzubieten.</li>
-                </ul>
-            </section>
+            <!-- German Experiences Section -->
+            <section id="experiences" class="experience-section">
+                <h2>Erfahrungen</h2>
+                <p>Nachfolgend finden Sie eine Auswahl von Projekten, die in den jeweiligen Bereichen einen Beitrag leisten. Die Mitarbeiter unseres Unternehmens haben in der Vergangenheit an diesen Projekten mitgewirkt.</p>
 
-            <section id="contact">
-                <h2>Kontaktieren Sie uns</h2>
-                <p>Für Anfragen oder um Ihre Projektanforderungen zu besprechen, wenden Sie sich bitte an:</p>
-                <p>Name: Dr.-Ing. Mehdi Sheikhalishahi</p>
-                <p>E-Mail: <a href="mailto:mehdi.alishahi@gmail.com">mehdi.alishahi@gmail.com</a></p>
-                <div class="cta">
-                    <a href="mailto:mehdi.alishahi@gmail.com" class="cta-button">Kontakt aufnehmen</a>
+                <div class="experience-card">
+                    <h3>Digitale Transformation</h3>
+                    <ul>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform project info</a> | <a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf" target="_blank">iKaaS PPT</a></li>
+                        <li><a href="https://github.com/avauberx/entry-graph" target="_blank">Entry Graph (EG)</a></li>
+                        <li><a href="#">Asset Manager</a>: to be open sourced.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Grün, Klimaneutral, Energieeffizienz</h3>
+                    <ul>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
+                        <li><a href="https://integroil.eu/" target="_blank">Water reuse in the Oil & Gas industry</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/643262/results" target="_blank">Intelligent Knowledge-as-a-Service Platform project info</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Intelligente Stadt und Dorf</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
+                        <li><a href="https://ictfootprint.eu/en/dc4cities" target="_blank">DC4Cities</a> | <a href="https://cordis.europa.eu/project/id/609304/results" target="_blank">DC4Cities project info</a></li>
+                        <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas" target="_blank">intelligent Knowledge-as-a-Service Platform</a></li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>DIY Internet der Dinge: Niedrige Kosten, LoRa, LoRaWAN</h3>
+                    <ul>
+                        <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/" target="_blank">Wazihub project</a></li>
+                        <li><a href="https://cordis.europa.eu/project/id/687607/de" target="_blank">Waziup project info</a></li>
+                    </ul>
                 </div>
             </section>
+
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="#contact" class="cta-button">Kontaktieren Sie uns</a>
+            </div>
         </div>
+
+        <section id="why-us">
+            <h2>Why Choose Ava UberX?</h2>
+            <p>Our team has years of experience working on state-of-the-art technologies and a passion for innovation. We pride ourselves on delivering top-quality services tailored to our clients' needs.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you are interested in our services or have any questions, feel free to reach out to us. We are here to help you bring your ideas to life.</p>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Ava UberX GbR All rights reserved.</p>
+        <p>&copy; 2024 Ava UberX GbR. All rights reserved.</p>
     </footer>
 
     <script>
         function toggleLanguage() {
             const contentEn = document.getElementById('content-en');
             const contentDe = document.getElementById('content-de');
-            const button = document.getElementById('language-toggle-button');
+            const toggleButton = document.getElementById('language-toggle-button');
 
             if (contentEn.classList.contains('hidden')) {
                 contentEn.classList.remove('hidden');
                 contentDe.classList.add('hidden');
-                button.textContent = 'DE';
+                toggleButton.textContent = 'DE';
             } else {
                 contentEn.classList.add('hidden');
                 contentDe.classList.remove('hidden');
-                button.textContent = 'EN';
+                toggleButton.textContent = 'EN';
             }
         }
     </script>
