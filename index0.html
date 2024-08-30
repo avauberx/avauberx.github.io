@@ -6,198 +6,7 @@
     <title>Ava UberX - Cutting-edge Technology Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #4a90e2;
-            --secondary-color: #f39c12;
-            --text-color: #333;
-            --bg-color: #f4f4f4;
-            --card-bg: #ffffff;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .logo {
-            font-size: 2.5em;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .tagline {
-            font-size: 1.2em;
-            font-weight: 300;
-        }
-
-        nav {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 15px 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-
-        .language-toggle {
-            text-align: right;
-            padding: 20px 0;
-        }
-
-        .language-toggle button {
-            background-color: transparent;
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            padding: 8px 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        .language-toggle button:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin: 40px 0 20px;
-            text-align: center;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .service-card {
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-
-        .service-card i {
-            font-size: 2.5em;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            color: var(--secondary-color);
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            position: relative;
-        }
-
-        ul li::before {
-            content: "\f00c";
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            color: var(--primary-color);
-            position: absolute;
-            left: -20px;
-        }
-
-        .cta {
-            text-align: center;
-            margin: 60px 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: var(--secondary-color);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 60px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .services {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -211,6 +20,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#why-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -270,7 +80,7 @@
                     <div class="service-card">
                         <i class="fas fa-comments"></i>
                         <h3>Chat Assistants</h3>
-                        <p>We excel in modelling chat assistants to the client's specific needs so as to bring a new way of interaction for users with their business. Tasks such as booking, FAQ’s and information search can be integrated into the Assistant seamlessly. Our expert team can help your business grow with the best chat assistant suited to your business with the power of AI.</p>
+                        <p>We excel in modelling chat assistants to the client's specific needs so as to bring a new way of interaction for users with their business. Tasks such as booking, FAQ's and information search can be integrated into the Assistant seamlessly. Our expert team can help your business grow with the best chat assistant suited to your business with the power of AI.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-laptop-code"></i>
@@ -298,6 +108,47 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+
+            <section id="experiences">
+                <h2>Our Experiences</h2>
+                <p>The following is a selected list of projects that our company staff have contributed to in the past:</p>
+                
+                <h3>Digital Transformation</h3>
+                <ul>
+                    <li><a href="https://cordis.europa.eu/project/id/643262/results">intelligent Knowledge-as-a-Service Platform project info</a> (<a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf">iKaaS PPT</a>)</li>
+                    <li><a href="https://github.com/avauberx/entry-graph">Entry Graph (EG)</a></li>
+                    <li>Asset Manager: to be open sourced</li>
+                </ul>
+
+                <h3>Green, Neutral Climate, Energy Efficiency</h3>
+                <ul>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">project info</a>)</li>
+                    <li><a href="https://integroil.eu/">Water reuse in the Oil & Gas industry</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/643262/results">intelligent Knowledge-as-a-Service Platform project info</a></li>
+                </ul>
+
+                <h3>Smart City & Village</h3>
+                <ul>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub project</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup project info</a></li>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">project info</a>)</li>
+                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas">intelligent Knowledge-as-a-Service Platform</a></li>
+                </ul>
+
+                <h3>Smart Mobility</h3>
+                <ul>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">project info</a>)</li>
+                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas">intelligent Knowledge-as-a-Service Platform</a></li>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub project</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup project info</a></li>
+                </ul>
+
+                <h3>DIY Internet of Things: Low-Cost, LoRa, LoRaWAN</h3>
+                <ul>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub project</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup project info</a></li>
+                </ul>
             </section>
 
             <section id="why-us">
@@ -360,22 +211,23 @@
                         <ul>
                             <li>Machine Learning-Lösungen</li>
                             <li>Deep Learning-Lösungen</li>
-                            <li>Generative KI-Beratung: Prompt Engineering, LLMs und RAGs-Beratung</li>
-                            <li>Lösungen basierend auf großen Sprachmodellen (Essay Writing, Zusammenfassung, Übersetzung, Informationsretrieval, intelligente Chatbots für jeden Service)</li>
-                            <li>After Sales Pricing für alle Branchen (Automotive, Einzelhandel usw.)</li>
+                            <li>Generative KI-Beratung: Prompt Engineering
+                                <li>Generative KI-Beratung: Prompt Engineering, LLMs und RAGs-Beratung</li>
+                            <li>Lösungen basierend auf großen Sprachmodellen (Essay-Schreiben, Zusammenfassung, Übersetzung, Informationsabruf, intelligente Chatbots für jeden Service)</li>
+                            <li>After-Sales-Preisgestaltung für alle Branchen (Automobilindustrie, Einzelhandel usw.)</li>
                             <li>Sprachverständnis</li>
-                            <li>Retrieval Augmented Generation → Daten spezifisch für Kundenanforderungen kuratieren und entweder als Frage-Antwort-System oder Chat-Assistenten-System bereitstellen.</li>
+                            <li>Retrieval Augmented Generation → Kuratierung von Daten spezifisch für Kundenanforderungen und Bereitstellung entweder als Frage-Antwort- oder Chat-Assistenzsystem.</li>
                         </ul>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-comments"></i>
                         <h3>Chat-Assistenten</h3>
-                        <p>Wir sind spezialisiert auf die Modellierung von Chat-Assistenten nach den spezifischen Bedürfnissen des Kunden, um eine neue Interaktionsmöglichkeit für Nutzer mit ihrem Geschäft zu bieten. Aufgaben wie Buchungen, FAQs und Informationssuche können nahtlos in den Assistenten integriert werden. Unser Expertenteam kann Ihrem Unternehmen helfen, mit dem besten Chat-Assistenten, der auf Ihr Geschäft zugeschnitten ist, durch die Kraft der KI zu wachsen.</p>
+                        <p>Wir sind Experten in der Modellierung von Chat-Assistenten nach den spezifischen Bedürfnissen des Kunden, um eine neue Art der Interaktion für Benutzer mit ihrem Unternehmen zu ermöglichen. Aufgaben wie Buchungen, FAQs und Informationssuche können nahtlos in den Assistenten integriert werden. Unser Expertenteam kann Ihrem Unternehmen helfen, mit dem besten Chat-Assistenten, der auf Ihr Geschäft zugeschnitten ist, durch die Kraft der KI zu wachsen.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>Webanwendungsentwicklung</h3>
-                        <p>Wir sind darauf spezialisiert, moderne, reaktionsfähige und benutzerfreundliche Webanwendungen zu erstellen, die verschiedenen Branchen gerecht werden. Unser Fachwissen umfasst Front-End- und Back-End-Entwicklung, Datenbankdesign, Sicherheit und Skalierbarkeit, um nahtlose Leistung und ein außergewöhnliches Benutzererlebnis zu gewährleisten.</p>
+                        <h3>Webentwicklung</h3>
+                        <p>Wir sind Experten in der Erstellung moderner, responsiver und benutzerfreundlicher Webanwendungen, die verschiedene Branchen bedienen. Unser Fachwissen umfasst Frontend- und Backend-Entwicklung, Datenbankdesign, Sicherheit und Skalierbarkeit, um eine nahtlose Leistung und ein außergewöhnliches Benutzererlebnis zu gewährleisten.</p>
                         <ul>
                             <li>Hochinteraktive und benutzerfreundliche Webschnittstellen</li>
                             <li>Datenvisualisierungen</li>
@@ -386,18 +238,59 @@
                     <div class="service-card">
                         <i class="fas fa-users-cog"></i>
                         <h3>Beratungsdienste</h3>
-                        <p>Wir bieten professionelle Beratungsdienste an, um Ihre Technologiebestrebungen mit Ihren geschäftlichen und Forschungszielen in Einklang zu bringen. Unser Beratungsteam kann Sie durch komplexe technologische Herausforderungen führen und Ihre IT-Infrastruktur und -Prozesse für maximale Effizienz optimieren.</p>
+                        <p>Wir bieten Expertenberatung, um Ihre Technologiestrategien mit Ihren Geschäfts- und Forschungszielen in Einklang zu bringen. Unser Beraterteam kann Sie durch komplexe technologische Herausforderungen führen und Ihre IT-Infrastruktur und -Prozesse für maximale Effizienz optimieren.</p>
                         <ul>
-                            <li>Enterprise: Zum Beispiel Beratung und Integration Ihrer IT-Infrastruktur mit Enterprise-Diensten verschiedener Anbieter:</li>
+                            <li>Unternehmen: Zum Beispiel Beratung und Integration Ihrer IT-Infrastruktur mit Enterprise-Diensten verschiedener Anbieter:</li>
                             <li>Microsoft-Dienste: Azure, Teams, Sharepoint usw.</li>
                             <li>Google-Dienste: Google Cloud, Drive usw.</li>
                             <li>Deep Learning-Projekte</li>
                             <li>SAP-Dienste: S/4HANA, SuccessFactors, Ariba, SAP Customer Experience</li>
                             <li>HR-Management-Lösungen: ingentis org.manager, Lucidchart, Pingboard, OrgChart Now, BambooHR, Visio</li>
-                            <li>Forschung und Entwicklung: R&D zu den allgemeinen Themen IoT, Cloud, KI, Web sowie Energieeffizienz.</li>
+                            <li>Forschung und Entwicklung: F&E zu den allgemeinen Themen IoT, Cloud, KI, Web sowie Energieeffizienz.</li>
                         </ul>
                     </div>
                 </div>
+            </section>
+
+            <section id="experiences">
+                <h2>Unsere Erfahrungen</h2>
+                <p>Nachfolgend finden Sie eine Auswahl von Projekten, an denen die Mitarbeiter unseres Unternehmens in der Vergangenheit mitgewirkt haben:</p>
+                
+                <h3>Digitale Transformation</h3>
+                <ul>
+                    <li><a href="https://cordis.europa.eu/project/id/643262/results">intelligent Knowledge-as-a-Service Platform Projektinfo</a> (<a href="https://www.eu-japan.eu/sites/default/files/imce/ikaas-webinar-presentation.pdf">iKaaS PPT</a>)</li>
+                    <li><a href="https://github.com/avauberx/entry-graph">Entry Graph (EG)</a></li>
+                    <li>Asset Manager: wird als Open Source veröffentlicht</li>
+                </ul>
+
+                <h3>Grün, Klimaneutral, Energieeffizienz</h3>
+                <ul>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">Projektinfo</a>)</li>
+                    <li><a href="https://integroil.eu/">Wasserwiederverwendung in der Öl- und Gasindustrie</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/643262/results">intelligent Knowledge-as-a-Service Platform Projektinfo</a></li>
+                </ul>
+
+                <h3>Intelligente Stadt und Dorf</h3>
+                <ul>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub-Projekt</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup-Projektinfo</a></li>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">Projektinfo</a>)</li>
+                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas">intelligent Knowledge-as-a-Service Platform</a></li>
+                </ul>
+
+                <h3>Intelligente Mobilität</h3>
+                <ul>
+                    <li><a href="https://ictfootprint.eu/en/dc4cities">DC4Cities</a> (<a href="https://cordis.europa.eu/project/id/609304/results">Projektinfo</a>)</li>
+                    <li><a href="https://www.clustercollaboration.eu/content/eu-japan-collaborative-project-intelligent-knowledge-service-ikaas">intelligent Knowledge-as-a-Service Platform</a></li>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub-Projekt</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup-Projektinfo</a></li>
+                </ul>
+
+                <h3>DIY Internet der Dinge: Niedrige Kosten, LoRa, LoRaWAN</h3>
+                <ul>
+                    <li><a href="https://www.waziup.io/research-innovation/projects/wazihub/">Wazihub-Projekt</a></li>
+                    <li><a href="https://cordis.europa.eu/project/id/687607/de">Waziup-Projektinfo</a></li>
+                </ul>
             </section>
 
             <section id="why-us">
@@ -432,15 +325,9 @@
             const contentDe = document.getElementById('content-de');
             const button = document.getElementById('language-toggle-button');
 
-            if (contentEn.classList.contains('hidden')) {
-                contentEn.classList.remove('hidden');
-                contentDe.classList.add('hidden');
-                button.textContent = 'DE';
-            } else {
-                contentEn.classList.add('hidden');
-                contentDe.classList.remove('hidden');
-                button.textContent = 'EN';
-            }
+            contentEn.classList.toggle('hidden');
+            contentDe.classList.toggle('hidden');
+            button.textContent = contentEn.classList.contains('hidden') ? 'EN' : 'DE';
         }
     </script>
 </body>
